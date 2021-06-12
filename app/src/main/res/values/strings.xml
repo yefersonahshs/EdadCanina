@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">CursoAndroidKotlin</string>
+    <string name="app_name" translatable="false">CursoAndroidKotlin</string>
+    <string name="how_old_are_you">¿How old are you ?</string>
+    <string name="calculate">Calculate</string>
+    <string name="your_Age">Your Age</string>
+    <string name="you_must_insert_your_Age">You must insert your Age</string>
+    <string name="result_text">Your dog Age is %d years old</string>
+
+
+
+
 </resources>

@@ -1,59 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
 
-    <ImageView
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/imagenperro"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿Cuantos Años Tienes?"
-        android:padding="16dp"
-        android:textSize="35sp"
-        android:textColor="@color/design_default_color_primary_dark"
-     />
-
-    <EditText
-        android:id="@+id/Age_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Escribe tu edad"
-        >
-
-    </EditText>
-
-    <TextView
-        android:id="@+id/Result_Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="19sp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:textColor="@color/black"
-        tools:text="tu edad es 140 años"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="Calcular"
-        android:layout_margin="16dp"
-        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/imagenperro" />
 
-    </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_old_are_you"
+            android:padding="16dp"
+            android:textSize="35sp"
+            android:textColor="@color/design_default_color_primary_dark" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/Age_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="number"
+            android:hint="Escribe tu edad">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/Result_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="19sp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            tools:text="tu edad es 140 años" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Calcular"
+            android:layout_margin="16dp">
+
+        </Button>
+
+    </LinearLayout>
+</layout>
